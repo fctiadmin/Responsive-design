@@ -1,0 +1,42 @@
+.container img{
+	/* width:200px;
+	height:200px; */
+	position:absolute;
+	bottom:0;
+	left:0;
+	animation-name:animate;
+	animation-duration:7s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 2;
+
+}
+@keyframes animate{
+	0%{
+	
+	}
+	25%{
+		/* clip-path: circle(50% at 50% 50%); */
+		bottom: 25%;
+		left:0;
+	}
+	50%{
+		transform: rotate(60deg);
+		left:80%;
+		bottom: 50%;
+		
+	}
+	75%{
+		transform: rotate(250deg);
+	
+		left:80%;
+		bottom: 50%;
+		transform: rotate(60deg);
+	}
+	100%{
+		bottom: 25%;
+		left: 0%;
+		transform: rotate(250deg);
+		
+	}
+
+}
